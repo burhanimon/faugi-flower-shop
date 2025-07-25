@@ -19,15 +19,13 @@
 
 /* dark03 */
 .text-light-gray{
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.51);
 }
 /* dark04 */
 .text-light{
     color: black;
 }
-.bg-light{
-    background-color: ;
-}
+
 /* header styles */
 
 
@@ -57,4 +55,56 @@
         display: flex;
         align-items: center;
      }
+}
+/* Banner Section */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: right;
+}
+.banner-content {
+    flex: 1;
+    min-height: 280px;
+
+}
+.banner-content h1 {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+.banner-content p {
+    font-size: 22px;
+    max-width: 570px;
+
+}
+.banner-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+
+}
+.banner-image img {
+    width: 100%;
+    max-width: 570px;
+}
+
+/* mobile responsive */
+@media ( max-width: 576px) {
+    .banner {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+   }
+   .banner-content h1 {
+    font-size: 28px;
+   }
+   .banner-content p {
+    font-size: 16px;
+   }
+   .banner-image {
+    text-align: center;
+   }
 }
