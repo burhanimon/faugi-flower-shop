@@ -48,7 +48,7 @@
     margin: 0 auto;
 }
 /* Moblie responsive */
-@media (max-width: 576px) { .nav-links li:not(.cart){
+@media (max-width: 768px) { .nav-links li:not(.cart){
     display: none;
 }
      .cart {
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 30px;
+    padding: 60px 30px;
     gap: 40px;
     flex-wrap: wrap;
     text-align: right;
@@ -72,27 +72,27 @@
 
 }
 .banner-content h1 {
-    font-size: 65px;
+    font-size: 36px;
     margin-bottom: 15px;
 }
 .banner-content p {
-    font-size: 22px;
-    max-width: 570px;
+    font-size: 18px;
+    margin-bottom: 20px;
 
 }
 .banner-image {
     flex: 1;
-    min-width: 280px;
+    min-width: 500px;
     text-align: center;
 
 }
 .banner-image img {
     width: 100%;
-    max-width: 570px;
+    max-width: 500px;
 }
 
 /* mobile responsive */
-@media ( max-width: 576px) {
+@media ( max-width: 768px) {
     .banner {
         flex-direction: column;
         text-align: left;
@@ -120,7 +120,7 @@
     margin-bottom: 40px;
 }
 .section-header h2 {
-    font-size: 50px;
+    font-size: 32px;
     color: #E95A08;
 }
 .section-header p {
@@ -132,6 +132,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    max-width: 570px;
+    margin:0, auto;
 }
 .plant-card {
     border: 1px solid #eee;
@@ -165,9 +167,43 @@
     padding: 8px 16px;
     cursor: pointer;
 }
+
 /* Moblie responsive */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .plant-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+/* plants lover section */
+.plants-lover { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 30px;
+    flex-wrap: wrap;
+}
+.lover-image {
+    flex: 1;
+    text-align: center;
+}
+.lover-image img {
+    width: 100%;
+    max-width: 400px;
+}
+.lover-content {
+    flex: 1;
+
+}
+.lover-content h2 {
+    font-size: 50px;
+    margin-top: 5px;
+}
+.lover-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.lover-content li {
+    margin-bottom: 10px;
 }
