@@ -45,7 +45,7 @@
     align-items: center;
 }
 .navbar, .banner{
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 /* Mobile responsive */
@@ -66,6 +66,7 @@
     gap: 40px;
     flex-wrap: wrap;
     text-align: right;
+
 }
 .banner-content {
     flex: 1;
@@ -114,6 +115,7 @@
 .plants {
     padding: 60px 30px;
     background-color: #FFFFFF;
+    max-width: 1140px;
 
 }
 .section-header {
@@ -133,7 +135,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    max-width: 570px;
+    max-width: 1140px;
     margin:0, auto;
 }
 .plant-card {
@@ -183,6 +185,7 @@
     gap: 40px;
     padding: 60px 30px;
     flex-wrap: wrap;
+    max-width: 1140px;
 }
 .lover-image {
     flex: 1;
@@ -190,10 +193,11 @@
 }
 .lover-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
 }
 .lover-content {
     flex: 1;
+    max-width: 540px;
 
 }
 .lover-content h2 {
@@ -271,7 +275,7 @@
     margin-bottom: 10px;
 }
 .overlay button {
-    background-color: #fff;
+    background-color:
     color: #e91e63;
     border: none;
     padding: 8px 14px;
@@ -279,8 +283,91 @@
     font-weight: bold;
     cursor: pointer;
 }
-.deal-card h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-    word-wrap: break-word;
+/* moblie responsiveness */
+@media (max-width: 576px) {
+    .deals-grid {
+        flex-direction: column;   
+    }
+    .left-deals {
+        flex-direction: column;
+    }
+    .deal-card.large {
+        height: 200px;
+    }
+    .overlay h3 {
+        font-size: 16px;
+
+    }
+    .overlay button {
+        font-size: 14px;
+    }
 }
+ /* footer */
+ .footer {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    color: #333;
+ }
+ .footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: auto;
+    gap: 30px;
+ }
+ .footer-left {
+    flex: 1 1 250px;
+ }
+ .footer-left img.footer-logo {
+    height: 40px;
+    margin-bottom: 10px;
+ }
+ .footer-left p{
+    font-size: 14px;
+    line-height: 1.6;
+ }
+ .footer-links {
+    flex: 1 1 200px;
+ }
+ .footer-links ul {
+    list-style: none;
+    padding: 0;
+ }
+ .footer-links ul li {
+    margin-bottom: 8px;
+ }
+ ..footer-links ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+ }
+ .social-icons {
+    margin-top: 10px;
+ }
+ .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+ }
+ .social-icons img {
+    height: 24px;
+
+ }
+/* Mobile responsive */
+@media ( max-width: 576px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-left,
+    ..footer-links {
+        flex: 1 1 100%;
+    }
+    .social-icons a {
+        margin: 0 5px;
+    }
+}
+
+ 
+
