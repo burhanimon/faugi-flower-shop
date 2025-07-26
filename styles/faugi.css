@@ -28,6 +28,9 @@
 }
 
 /* header styles */
+.colorful {
+    color: #E95A08;
+}
 
 
 /* navbar style */
@@ -75,7 +78,8 @@
 }
 .banner-content h1 {
     font-size: 36px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    text-align: right;
 }
 .banner-content p {
     font-size: 18px;
@@ -124,7 +128,7 @@
 }
 .section-header h2 {
     font-size: 32px;
-    color: #E95A08;
+    color: black;
 }
 .section-header p {
     font-size: 16px;
@@ -211,7 +215,7 @@
 }
 .lover-content li {
     margin-bottom: 10px;
-}
+} 
 /* latest deals */
 .latest-deasls  {
     padding: 60px 30px;
@@ -354,20 +358,4 @@
 
  }
 /* Mobile responsive */
-@media ( max-width: 576px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer-left,
-    ..footer-links {
-        flex: 1 1 100%;
-    }
-    .social-icons a {
-        margin: 0 5px;
-    }
-}
-
- 
-
+@media ( max-width: 576px)
